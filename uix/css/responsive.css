@@ -1,0 +1,206 @@
+/* Large desktop :1280px. */
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+	.myself-img {
+		right: 100px;
+		text-align: right
+	}
+
+	.myself-img img {
+		width: 85%
+	}
+}
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.myself-img {
+		right: 50px;
+		text-align: right
+	}
+
+	.myself-img img {
+		width: 75%
+	}
+
+	.social-icon-area {
+		left: 25px;
+	}
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.mobile-social-icon {
+		display: block
+	}
+
+	.myself-img {
+		display: none
+	}
+
+	.social-icon-area {
+		display: none
+	}
+
+	.section-heading-1 h2 {
+		font-size: 50px;
+	}
+	.contact-image img{width:80%;}
+}
+
+/* small mobile :320px. */
+
+@media only screen and (min-width: 320px) and (max-width: 574px) {
+
+	.mobile-social-icon {
+		display: block
+	}
+
+	.myself-img {
+		display: none
+	}
+
+	.social-icon-area {
+		display: none
+	}
+
+	.contact-image img {
+		display: none
+	}
+
+	.workstation {
+		margin-top: 45px
+	}
+
+	.single-count-area {
+		text-align: center
+	}
+
+	.client-comments {
+		padding: 0 0px 0 50px;
+	}
+
+	.singl-topic {
+		text-align: center
+	}
+
+	.about-img {
+		margin-bottom: 45px;
+	}
+
+	.section-heading-1 h2 {
+		font-size: 40px;
+	}
+
+	.section-heading-2 h2 {
+		font-size: 40px;
+	}
+
+	.intro-text h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.section-heading-3 h2 {
+		font-size: 40px;
+	}
+
+	.section-heading-1 h2::after {
+		bottom: 0px;
+	}
+
+	.section-heading-3 h2::after {
+		bottom: 0px;
+	}
+
+	br {
+		display: none
+	}
+
+	.details-intro-text h1 {
+		font-size: 30px;
+	}
+
+	.right-sidebar {
+		margin-top: 30px;
+	}
+}
+
+/* Large Mobile :575px. */
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+	.mobile-social-icon {
+		display: block
+	}
+
+	.myself-img {
+		display: none
+	}
+
+	.social-icon-area {
+		display: none
+	}
+
+	.contact-image img {
+		display: none
+	}
+
+	.workstation {
+		margin-top: 45px
+	}
+
+	.single-count-area {
+		text-align: center
+	}
+
+	.client-comments {
+		padding: 0 0px 0 50px;
+	}
+
+	.singl-topic {
+		text-align: center
+	}
+
+	.about-img {
+		margin-bottom: 45px;
+	}
+
+	.section-heading-1 h2 {
+		font-size: 40px;
+	}
+
+	.section-heading-2 h2 {
+		font-size: 40px;
+	}
+
+	.intro-text h1 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.section-heading-3 h2 {
+		font-size: 40px;
+	}
+
+	.section-heading-1 h2::after {
+		bottom: 0px;
+	}
+
+	.section-heading-3 h2::after {
+		bottom: 0px;
+	}
+
+	.details-intro-text h1 {
+		font-size: 35px;
+	}
+
+	.right-sidebar {
+		margin-top: 30px;
+	}
+
+}
+
+
+/* Responsive CSS END
+/*----------------------------------------*/

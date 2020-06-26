@@ -1,0 +1,943 @@
+/***********************************************
+Template Name:UIX 
+Author URL: https://themeforest.net/user/enventer
+Website: www.enventer.com
+***********************************************/
+
+/* TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+--------------------------------------------------------------
+
+1. Default Theme CSS
+    1.1 preloader
+    1.2 section heading
+    1.3 section margin
+2. Header Area CSS
+	2.1 main menu
+	2.2 sticky menu
+	2.3 header image
+	2.4 header text
+	2.5 header social
+3. About Area CSS
+	3.1 about image
+	3.2 about content
+4. Expertise Area CSS
+5. Experience Area CSS
+	5.1 single experience
+	5.2 experience slick button
+6. Service Area CSS
+	6.1 single service
+7. Counter Area CSS
+8. Projects Area CSS
+	8.1 project filter
+	8.2 single project
+	8.3  project pagination
+9. Projects Area CSS
+	9.1 single testimonial
+	9.2 testimonial slick dots
+10. Blog Area CSS
+	10.1 single blog
+	10.2 blog content
+11. Footer Area CSS
+	11.1 contact form
+	11.2 copyright text
+12. Blog Details Area CSS
+	12.1 left widget
+	12.2 right widget
+
+
+--------------------------------------------------------------
+
+
+/*2.3 header image*/
+.header-content-area {
+	height: 100vh;
+	width: 100%;
+	background-color: #FFD15A;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.myself-img {
+	position: absolute;
+	bottom: 0;
+	right: 100px;
+	-webkit-animation: sp 3s linear infinite;
+	animation: sp 3s linear infinite;
+}
+
+@keyframes sp {
+	from {
+		transform: translate(0, 0px);
+	}
+
+	65% {
+		transform: translate(0, 40px);
+	}
+
+	to {
+		transform: translate(0, -0px);
+	}
+}
+
+/*2.4 header text*/
+.intro-text {
+	text-align: left;
+	padding-top: 60px;
+}
+
+.intro-text h1 {
+	text-transform: capitalize;
+	font-size: 45px;
+	line-height: 55px;
+	color: #212121;
+	margin-bottom: 10px;
+	font-family: 'Tajawal', sans-serif;
+	font-weight: 900
+}
+
+.learnmore {
+	margin-top: 25px;
+	position: relative;
+	display: inline-block
+}
+
+.learnmore2 {
+	position: absolute;
+	right: -55px;
+	top: 7px;
+	z-index: 9 display: inline-block;
+}
+
+.learnmore .skill-btn {
+	background: #212121;
+	-webkit-box-shadow: 0px 1px 26px rgba(41, 147, 34, 0.62);
+	box-shadow: 0px 1px 26px rgba(41, 40, 40, 0.62);
+	border-radius: 50px;
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 15px 40px;
+	-webkit-transition: .5s;
+	transition: .5s;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.skill-btn-youtube i {
+	color: #212121;
+	font-size: 40px;
+	transition: .5s
+}
+
+.skill-btn-youtube i:hover {
+	color: #fff
+}
+
+.learnmore .skill-btn:hover {
+	color: #323657;
+	background-color: #fff
+}
+
+/*2.5 header social*/
+.mobile-social-icon {
+	padding: 25px 0;
+	display: none
+}
+
+.mobile-social-icon ul li {
+	display: inline-block;
+	margin-right: 10px
+}
+
+.mobile-social-icon ul li:last-child {
+	margin-right: 0
+}
+
+.mobile-social-icon a {
+	color: #212121;
+	font-size: 23px;
+}
+
+
+.social-icon-area {
+	position: fixed;
+	left: 50px;
+	width: 1px;
+	height: 65%;
+	background-color: #3c3b3b;
+	top: 5%;
+	z-index: 1;
+}
+
+.social-icon {
+	position: absolute;
+	bottom: -170px;
+	left: -9px;
+	padding: 20px 0;
+}
+
+.social-icon a {
+	color: #3c3b3b;
+	font-size: 22px;
+	margin-bottom: 10px !important;
+}
+
+/*===============3. About Area CSS===================*/
+.about-us-area {
+	padding: 150px 0
+}
+
+/*3.1 about image*/
+.about-img {
+	padding: 0px 30px;
+	position: relative;
+}
+
+.about-img img {
+	border-radius: 25px;
+	width: 100%;
+}
+
+.about-img a::after {
+	content: '';
+	position: absolute;
+	top: -25px;
+	left: 5px;
+	background-color: #FFF0C9;
+	height: 180px;
+	width: 180px;
+	border-radius: 25px;
+	z-index: -1;
+}
+
+.about-img a::before {
+	content: '';
+	position: absolute;
+	bottom: -25px;
+	right: 5px;
+	background-color: #FFF0C9;
+	height: 180px;
+	width: 180px;
+	border-radius: 25px;
+	z-index: -1;
+}
+
+/*3.2 about content*/
+.about-content {
+	padding-left: 15px;
+}
+
+.about-text {
+	margin-top: 35px;
+}
+
+.about-info {
+	margin-top: 20px
+}
+
+.about-info span {
+	font-weight: 700;
+	text-transform: capitalize;
+	font-size: 20px
+}
+
+/*===========4. Expertise Area CSS============*/
+.expertise-area {
+	padding: 150px 0;
+	background-color: #FFFDF6
+}
+
+.singl-topic {
+	margin-top: 60px;
+	-webkit-animation: updown 3s linear infinite;
+	animation: updown 3s linear infinite;
+}
+
+.singl-topic p {
+	font-weight: 700;
+	margin-top: 10px;
+	font-size: 20px
+}
+
+.workstation {
+	text-align: center
+}
+
+.workstation img {
+	padding-left: 65px;
+	width: 100%;
+}
+
+@keyframes updown {
+	from {
+		transform: scale(1);
+	}
+
+	65% {
+		transform: scale(1.15);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+/*==============5. Experience Area CSS==============*/
+.experience-area {
+	padding: 150px 0;
+	background-image: url(img/experience.jpg);
+	position: relative;
+}
+
+.experience-area:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.78);
+}
+
+.experience-item-slider {
+	margin-top: 75px;
+	padding: 0 50px;
+}
+
+/*5.1 single experience*/
+.single-experience {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 20px;
+	transition: .5s
+}
+
+.single-experience:hover {
+	background-color: #FFD15A
+}
+
+.single-experience h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 23px
+}
+
+.single-experience h4 {
+	text-transform: uppercase;
+	font-weight: 700
+}
+
+.single-experience span {
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+/*5.2 experience slick button*/
+.fas.fa-chevron-left.left-arrow.slick-arrow {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	background-color: #fff;
+	color: #212121;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .5s
+}
+
+.fas.fa-chevron-right.right-arrow.slick-arrow {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	background-color: #fff;
+	color: #212121;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .5s
+}
+
+.fas.fa-chevron-left.left-arrow.slick-arrow:hover,
+.fas.fa-chevron-right.right-arrow.slick-arrow:hover {
+	background-color: #FFD15A
+}
+
+.slick-current .single-experience {
+	background-color: #FFD15A
+}
+
+/*================6. Service Area CSS=====================*/
+.services-area {
+	padding: 150px 0
+}
+
+.servive-box {
+	margin-top: 45px
+}
+
+/*6.1 single service*/
+.single-services {
+	margin-top: 30px
+}
+
+.single-services h4 {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	;
+	margin-top: 30px
+}
+
+.single-services img {
+	height: 90px
+}
+
+/*============7. Counter Area CSS============*/
+.portfolio-counter-area {
+	background-image: url('img/counter-bg.png');
+	padding: 70px 0 100px 0;
+	background-size: cover
+}
+
+.single-count-area {
+	color: #212121;
+	text-transform: uppercase;
+	margin-top: 30px
+}
+
+.single-count-area span {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.single-count-area strong {
+	font-size: 40px;
+	font-weight: 700;
+	color: #FFD15A
+}
+
+.single-count-area p {
+	font-size: 20px;
+	color: #212121;
+	font-weight: 700;
+}
+
+/*=============8. Projects Area CSS==============*/
+.projects-area {
+	padding: 150px 0 75px 0
+}
+
+.porjects-h-f {
+	margin-bottom: 50px
+}
+
+/*8.1 project filter*/
+
+.projects-filter li {
+	display: inline-block;
+	position: relative;
+	padding: 7px 30px;
+}
+
+.projects-filter li a {
+	display: inline-block;
+	color: #212121;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.projects-filter li.active {
+	background-color: #FFD15A;
+	border-radius: 20px;
+	padding: 7px 30px;
+	text-align: center;
+	-webkit-transition: 1s;
+	transition: .5s;
+	box-shadow: 0px 4px 64px #FFEDBF;
+}
+
+/*8.2 single project*/
+.single-projects {
+	position: relative;
+	overflow: hidden;
+	;
+	margin-top: 30px;
+	border-radius: 15px;
+}
+
+.single-projects img {
+	width: 100%;
+}
+
+.image-content-area {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	transition: .7s;
+	background: linear-gradient(to top, #1C1C1C 0%, rgba(23, 23, 23, 0.815475) 39.37%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 15px;
+}
+
+.single-projects:hover .image-content-area {
+	bottom: 0
+}
+
+.hover-text {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.hover-text h4 {
+	color: #fff;
+	text-transform: uppercase;
+	;
+	font-size: 24px;
+	font-weight: 700
+}
+
+.hover-text p {
+	color: #fff;
+	font-size: 18px;
+	line-height: 24px
+}
+
+.hover-text a {
+	color: #F9A52E;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 19px;
+	display: inline-block;
+	margin-top: 5px;
+	transition: .5s
+}
+
+.hover-text a:hover {
+	color: #FFD15A
+}
+
+/*8.3  project pagination*/
+.pagination-area {
+	text-align: center;
+	margin-top: 75px
+}
+
+.pagination-button {
+	display: inline-block;
+	position: relative
+}
+
+.pagination-button span {
+	height: 35px;
+	width: 35px;
+	border: 1px solid #FFD15A;
+	display: inline-block;
+	border-radius: 50%;
+	line-height: 35px;
+	margin-right: 25px;
+	font-weight: 700;
+	cursor: pointer;
+	background-color: #fff
+}
+
+.pagination-button span.active {
+	background-color: #FFD15A
+}
+
+.pagination-button::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #FFD15A;
+	left: 0;
+	top: 50%;
+	z-index: -1;
+	transform: translateY(-50%)
+}
+
+.pagination-button span:last-child {
+	margin-right: 0
+}
+
+/*==========9. Projects Area CSS=========*/
+.testimonial-area {
+	padding: 150px 0;
+	background-color: #FFFDF6
+}
+
+/*9.1 single testimonial*/
+.single-testimonial {
+	margin-top: 75px;
+	background-image: url(img/testimonial/qoute.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.client-image {
+	width: 30%;
+	float: left;
+}
+
+.client-image img {
+	width: 100%;
+	border-radius: 25px
+}
+
+.client-comments {
+	width: 70%;
+	overflow: hidden;
+	padding: 0 75px 0 50px
+}
+
+.client-comments h4 {
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.client-comments span {
+	font-size: 20px;
+	font-weight: 700
+}
+
+.client-comments p {
+	margin-top: 10px
+}
+
+/*9.2 testimonial slick dots*/
+.slick-dots {
+	display: flex;
+	justify-content: center;
+}
+
+.slick-dots button {
+	display: block;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: none;
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0.19);
+	text-indent: -9999px;
+	margin-right: 6px;
+}
+
+.slick-dots li.slick-active button {
+	background-color: #212121
+}
+
+.slick-dots button:focus {
+	outline: none
+}
+
+/*=========10. Blog Area CSS==========*/
+.blog-area {
+	padding: 150px 0
+}
+
+.blog-post-area {
+	margin-top: 45px
+}
+
+/*10.1 single blog*/
+.single-blog-post {
+	background-color: #fff;
+	border-radius: 25px;
+	box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+	transition: .5s;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	margin-top: 30px
+}
+
+.single-blog-post::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -100%;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFDF6;
+	z-index: -1;
+	transition: .7s;
+	border-radius: 25px;
+}
+
+.single-blog-post:hover:before {
+	top: 0;
+}
+
+.single-blog-post:hover {
+	box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.15);
+}
+
+.single-blog-post:hover .blog-thumbnail img {
+	transform: rotate(15deg) scale(1.4);
+	opacity: .8
+}
+
+.single-blog-post:hover .blog-post-text a {
+	color: #F9A52E
+}
+
+.blog-thumbnail {
+	overflow: hidden
+}
+
+.blog-thumbnail img {
+	width: 100%;
+	border-radius: 25px 25px 0 0;
+	overflow: hidden;
+	transition: .9s;
+}
+
+/*10.2 blog content*/
+.blog-post-text {
+	padding: 20px;
+}
+
+.blog-post-text h3 {
+	font-weight: 700;
+	margin-top: 10px;
+	font-size: 23px;
+	margin-bottom: 0;
+	color: #212121
+}
+
+.blog-post-text span {
+	text-transform: capitalize;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px
+}
+
+.blog-post-text p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.blog-post-text a {
+	margin-top: 10px;
+	display: inline-block;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #FFD15A;
+	font-size: 20px
+}
+
+/*==========11. Footer Area CSS===========*/
+.mian-footer {
+	background-color: #202224;
+	padding: 75px 0;
+	margin-top: 75px;
+	position: relative;
+}
+
+.contact-pattern {
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-animation: contact 3s linear infinite;
+	animation: contact 3s linear infinite;
+}
+
+@keyframes contact {
+	from {
+		transform: translate(0, 0px);
+	}
+
+	65% {
+		transform: translate(0, 30px);
+	}
+
+	to {
+		transform: translate(0, -0px);
+	}
+}
+
+/*11.1 contact form*/
+.contact-form input[type="email"] {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 17px;
+	border-radius: 65px;
+	border: none;
+}
+
+.contact-form span {
+	font-weight: 700;
+	font-size: 22px;
+	color: #FFD15A;
+	display: block;
+	margin-bottom: 15px
+}
+
+.contact-form textarea {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 15px;
+	border-radius: 15px;
+	border: none;
+}
+
+.contact-form input[type="button"] {
+	background: #FFD15A;
+	box-shadow: 0px 4px 64px rgba(255, 209, 90, 0.15);
+	border-radius: 65px;
+	padding: 10px 45px;
+	border: none;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	transition: .5s
+}
+
+.contact-form input[type="button"]:hover {
+	color: #fff
+}
+
+.contact-image {
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+}
+
+/*11.2 copyright text*/
+.copyright {
+	background-color: #2B2D2F;
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+}
+
+.copyright p {
+	color: #FFD15A;
+}
+
+.copyright a {
+	font-weight: 700;
+	color: #FFD15A
+}
+
+/*=========12. Blog Details Area CSS========*/
+.blog-details {
+	padding: 60px 0 0 0
+}
+
+.details-content-blog {
+	height: 45vh;
+	width: 100%;
+	background-image: url(img/blog/blog-details.jpg);
+	overflow: hidden;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-position: center;
+}
+
+.details-content-blog:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 45vh;
+	background: rgba(52, 52, 52, 0.58);
+}
+
+.details-intro-text h1 {
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	font-size: 40px
+}
+
+.details-intro-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+
+.details-intro-text h1:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	width: 50px;
+	height: 3px;
+	background-color: #FFD15A;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%)
+}
+
+/*12.1 left widget*/
+.left-sidebar {
+	padding-right: 30px
+}
+
+.left-sidebar img {
+	width: 100%;
+	margin: 40px 0
+}
+
+
+/*12.2 right widget*/
+.right-sidebar h4 {
+	color: #212121;
+	font-weight: 700;
+	font-size: 20px;
+	border-bottom: 1px solid rgba(199, 199, 199, 0.28);
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+
+.right-sidebar ul li a {
+	padding: 10px 0;
+	display: inline-block;
+	color: #646464;
+	font-size: 19px;
+	text-transform: capitalize;
+}
+
+.right-sidebar ul li a:hover {
+	color: #FFD15A
+}
+
+.social-icon-blog ul li {
+	display: inline-block;
+	margin: 0 5px
+}
